@@ -31,8 +31,6 @@ def index_url(url, index='test-index'):
     sequence = base.get_packages(url, limit=10)
     for i in sequence:
         a = list(sequence)
-        print a, len(a)
-        print '!!!!!!!!!!!!!!!!!!!!!!!'
         index_file(i, index)
 
 def search(query, index='test-index'):
